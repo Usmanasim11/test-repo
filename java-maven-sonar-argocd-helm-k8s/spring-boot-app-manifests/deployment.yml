@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: sprint-boot-app
-        image: usmanasim11/ultimate-cicd:13
+        image: usmanasim11/ultimate-cicd:11
         ports:
         - containerPort: 8080
