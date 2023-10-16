@@ -11,6 +11,14 @@ pipeline {
                 //git branch: 'main', url: 'https://github.com/sunitabachhav2007/Jenkins-Zero-To-Hero.git'
             }
         }
+        stage('docker-test') {
+            steps {
+                sh 'docker ps'
+                sh 'docker ps -a'
+                sh 'docker images'
+                //git branch: 'main', url: 'https://github.com/sunitabachhav2007/Jenkins-Zero-To-Hero.git'
+            }
+        }
         stage('Build and Test') {
             steps {
                 sh 'ls -ltr'
